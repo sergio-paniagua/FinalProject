@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x:hidden; //sugerencia de Franco (ver en proyecto final)
+    }
+
+   header{
+    width: 100vw;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+        ul{
+            list-style: none;
+            font-style: $letraNav;
+        }
+
+        a{
+            box-shadow: none;
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: green;
+                background-color: black;
+                border-radius: 50px;
+            }
+        }
+
+        button:hover{
+            background-color: black;
+        }
+
+        .logoNom{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .navBar{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                .listNav{
+                    margin: 10px;
+                }
+        }
+   }
+
+   footer{
+    background-color: $colorFooter;
+    width: 100vw;
+        .imgF{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 4px;
+
+            .aImgLn{
+                width: 3%;
+            }
+
+            .aImgF{
+                width: 3%;
+            
+            }
+            .imgFace{
+                width: 100%;
+            }
+             
+            .imgLn{
+                width: 100%;
+            }
+        
+        }
+        .direccion {
+            @extend %formatoRedesFooter}
+
+        .derechosF {
+            @extend %formatoRedesFooter
+        }
+   }
+
+   main{
+    .titulo{
+        display: flex;
+        justify-content: space-around;
+
+    h2{
+        animation-name: efectoTitulo;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes efectoTitulo {
+         0%{
+            color: rgb(6, 57, 30);
+        }
+            
+        50%{ 
+            color: rgb(36, 59, 13);
+        }
+        100%{
+            color: rgb(94, 128, 40);
+        }
+        }
+    }
+
+    @mixin bttn($color, $radius: 0) {
+        background-color: $color;
+        border: solid black;
+        text-transform: uppercase;
+      
+        @if $radius != 0 {
+          border-radius: $radius;
+        }
+      }
+    
+    .cardIndex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .btn-primary{
+            @include bttn (rgb(24, 54, 24), $radius: 20px);
+        }
+        .btn-primary:hover{
+            background-color:black;
+            border-radius: 50px !important;
+        }
+    }
+
+    h1{
+        color: black;
+    }
+   }
+

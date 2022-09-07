@@ -1,0 +1,18 @@
+%formatoRedesFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+
+@mixin bttn($color, $radius: 0) {
+    background-color: $color;
+    border: solid black;
+    text-transform: uppercase;
+    
+  
+    @if $radius != 0 {
+      border-radius: $radius;
+    }
+  }

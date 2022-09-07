@@ -1,7 +1,8 @@
-h1{
-    color: red($color: #000000);
-}
+//VARIABLES siempren van arriva de todo
 
-h1{
-    background-color: red($color: #000000);
-}
+@import "./variables/colores";
+@import "./variables/fuentes";
+@import "./variables/extend";
+
+@import "./index";
+@import "./mediaquerys";
