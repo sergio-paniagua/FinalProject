@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow-x:hidden; //sugerencia de Franco (ver en proyecto final)
+    }
+    
+header{
+    @extend %formatoHeader
+    }
+
+footer{
+    @extend %formatoFooter
+}
+
+.direccion {
+    @extend %formatoRedesFooter}
+
+.derechosF {
+    @extend %formatoRedesFooter
+}
+
