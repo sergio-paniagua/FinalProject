@@ -1,5 +1,5 @@
 @charset "UTF-8";
-header header {
+header {
   width: 100vw;
   background-color: white;
   height: 100%;
@@ -7,28 +7,28 @@ header header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
-  header header ul {
+  header ul {
     list-style: none;
     font-style: "Roboto", sans-serif; }
-  header header a {
+  header a {
     box-shadow: none;
     text-decoration: none;
     color: black; }
-    header header a:hover {
+    header a:hover {
       color: green;
       background-color: black;
       border-radius: 50px; }
-  header header button:hover {
+  header button:hover {
     background-color: black; }
-  header header .logoNom {
+  header .logoNom {
     display: flex;
     flex-direction: row;
     align-items: center; }
-  header header .navBar {
+  header .navBar {
     display: flex;
     flex-direction: row;
     justify-content: flex-end; }
-    header header .navBar .listNav {
+    header .navBar .listNav {
       margin: 10px; }
 
 footer footer {
@@ -115,6 +115,24 @@ main {
       border-radius: 50px !important; }
   main h1 {
     color: black; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 * {
   margin: 0%;
