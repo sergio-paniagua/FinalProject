@@ -33,3 +33,21 @@
         }
     }
 }
+
+@media (max-width:780px){
+    main{
+
+        .cardCbd{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: space-around;}
+            
+            .cardIndex{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-content: space-evenly;
+            }
+        }
+    }

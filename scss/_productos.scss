@@ -20,3 +20,34 @@ footer{
 .derechosF {
     @extend %formatoRedesFooter
 }
+main{
+
+    .cardCbd{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .btn-primary{
+        background-color: darkolivegreen;
+        border: solid black;
+    }
+    .btn-primary:hover{
+        background-color:black;
+    }
+    .container-fluid{
+        display: flex !important;
+        flex-direction: row-reverse; 
+    } 
+    button:hover{
+        background-color: rgba(253, 253, 253, 0.8)
+    }
+    a:hover {
+        background-color: rgba(22, 67, 20, 0.8)
+    }
+        
+    .titMed{
+        color: black !important;
+        display: flex;
+        justify-content: space-around;
+    }
+}

@@ -184,6 +184,33 @@ main .containerLab {
   box-sizing: border-box;
   overflow-x: hidden; }
 
+main .cardCbd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+main .btn-primary {
+  background-color: darkolivegreen;
+  border: solid black; }
+
+main .btn-primary:hover {
+  background-color: black; }
+
+main .container-fluid {
+  display: flex !important;
+  flex-direction: row-reverse; }
+
+main button:hover {
+  background-color: rgba(253, 253, 253, 0.8); }
+
+main a:hover {
+  background-color: rgba(22, 67, 20, 0.8); }
+
+main .titMed {
+  color: black !important;
+  display: flex;
+  justify-content: space-around; }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -217,3 +244,15 @@ main .containerLab {
     display: flex;
     flex-direction: column;
     justify-content: space-between; } }
+
+@media (max-width: 780px) {
+  main .cardCbd {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around; }
+  main .cardIndex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-evenly; } }
