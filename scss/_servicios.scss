@@ -21,3 +21,109 @@ footer{
     @extend %formatoRedesFooter
 }
 
+/* ------------------ LABORATORIO -------------------------- */
+main{
+  .titulo{
+    display: flex;
+    justify-content: space-around;
+
+      h2{
+        border: solid red;
+      }
+      }
+  .containerLab{ 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row dense;
+  grid-template-areas:
+  "main";  
+      .mainServicios{
+        grid-area: main;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+
+            .potencia{
+             @extend %formatoGridServicios
+            }
+
+            .potT{
+              @extend %flexGridServicios
+            }
+
+            .pot{
+                margin: 10px;
+            }
+
+            .textPot{
+              @extend %formatoTextoServicios
+            }
+
+            .imgLab{
+              width: 30%;
+              height: 30%;
+            }
+
+          
+              /*FIN SECCION POTENCIA*/
+              
+              .terpenos{
+                @extend %formatoGridServicios
+              }
+              .terT{
+                @extend %flexGridServicios
+              }
+              
+              .ter{
+                margin: 10px;
+              }
+              
+              .textTer{
+                @extend %formatoTextoServicios
+              }
+              
+              .agroquimicos{
+                @extend %formatoGridServicios
+              }
+
+              .agro{
+                margin: 10px;
+              }
+              .textAgro{
+                @extend %formatoTextoServicios
+              }
+              
+              .agroT{
+                @extend %flexGridServicios
+              }
+              
+              .metales{
+                @extend %formatoGridServicios
+              }
+              
+              .met{
+                margin: 10px;
+              }
+              .textMet{
+                @extend %formatoTextoServicios
+              }
+              
+              .metT{
+                @extend %flexGridServicios
+              }
+            }
+
+            button:hover{
+              background-color: green;
+          }
+              .botonLab{
+                background-color: grey;
+              }
+    }
+  }

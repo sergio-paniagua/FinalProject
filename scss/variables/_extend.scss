@@ -83,6 +83,25 @@
     padding: 4px;
 }
 
+%formatoGridServicios{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px red;
+    justify-content: space-between;
+}
+
+%flexGridServicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%formatoTextoServicios{
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
 @mixin bttn($color, $radius: 0) {
     background-color: $color;
     border: solid black;

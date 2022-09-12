@@ -19,5 +19,17 @@
             align-content: space-evenly;
         }
     }
+}
 
+@media (max-width: 650px){
+    main{
+        .containerLab{
+            .mainServicios { 
+                grid-area: main;
+                display: flex;
+                flex-direction:column;
+                justify-content: space-between;
+            }
+        }
+    }
 }
