@@ -32,7 +32,7 @@ header {
       margin: 10px; }
 
 footer footer {
-  background-color: #bde0fe;
+  background-color: #e1febd;
   width: 100vw; }
   footer footer .imgF {
     display: flex;
@@ -101,7 +101,7 @@ header {
   min-height: 10vh; }
 
 footer {
-  background-color: #bde0fe;
+  background-color: #e1febd;
   width: 100vw; }
   footer .imgF {
     display: flex;
