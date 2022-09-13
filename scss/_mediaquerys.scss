@@ -51,3 +51,21 @@
             }
         }
     }
+
+    @media (max-width: 700px){
+        main{
+
+            .nosotros{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 50px;
+            }
+            
+            .picNos{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+        }
+    }

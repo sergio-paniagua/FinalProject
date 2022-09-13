@@ -20,3 +20,37 @@ footer{
 .derechosF {
     @extend %formatoRedesFooter
 }
+main{
+
+    .contacto{
+        margin: 50px;
+    }
+    
+    .titCon{
+        color: green !important;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .accordion-header {
+        background-color: darkgreen;
+    }
+    
+    .accordion-button:not(.collapsed){
+        background-color:darkseagreen;
+        color: black;
+    }
+    .dat{
+        margin-top: 10px;
+        
+    }
+    
+    .genCann{
+        color: black;
+    }
+    
+    .genCann::selection{
+        color: #242329;
+        background-color: #f6bfe2;
+    }
+}

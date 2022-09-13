@@ -20,3 +20,30 @@ footer{
 .derechosF {
     @extend %formatoRedesFooter
 }
+main{
+     
+    background-color: beige;
+    .titNos{
+        display: flex;
+        justify-content: space-around;
+        background-color: darkgreen;
+        color: black;
+    }
+    .nosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+    }
+     .imgNos{
+        width: 80vh;
+        margin: 20px;
+        padding-top: 5px;
+        max-width: 100%;
+        height: auto;
+     }
+     .artNos{
+        margin: 20px;
+    
+     }
+}

@@ -6,6 +6,7 @@
     }
 
    header{
+    min-height: 10vh;
     @extend %formatoHeader
    }
 
@@ -44,27 +45,11 @@
    }
 
    main{
+    min-height: 80vh;
+    
     .titulo{
         display: flex;
         justify-content: space-around;
-
-    h2{
-        animation-name: efectoTitulo;
-        animation-duration: 6s;
-        animation-iteration-count: infinite;
-    }
-    @keyframes efectoTitulo {
-         0%{
-            color: rgb(6, 57, 30);
-        }
-            
-        50%{ 
-            color: rgb(36, 59, 13);
-        }
-        100%{
-            color: rgb(94, 128, 40);
-        }
-        }
     }
 /* ---------------------MIXIN--------------------- */
 /*¿VER XQ NO SE IMPORTA DESDE LA CARPETA _EXTEND? SALE EL SIGUIENTE ERROR= "message": "no mixin named bttn",
