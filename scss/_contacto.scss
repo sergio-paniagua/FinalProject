@@ -3,16 +3,13 @@
     padding: 0%;
     box-sizing: border-box;
     overflow-x:hidden; //sugerencia de Franco (ver en proyecto final)
-    }
-    
+    }  
 header{
     @extend %formatoHeader
     }
-
 footer{
     @extend %formatoFooter
 }
-
 .direccion {
     @extend %formatoRedesFooter
 }
@@ -33,24 +30,21 @@ main{
     }
     
     .accordion-header {
-        background-color: darkgreen;
+        background-color: rgb(113, 208, 79);
     }
     
     .accordion-button:not(.collapsed){
-        background-color:darkseagreen;
+        background-color:rgb(229, 246, 209);
         color: black;
     }
     .dat{
         margin-top: 10px;
         
     }
-    
-    .genCann{
+
+    .accordion-button{
+        background-color:darkseagreen;
         color: black;
     }
-    
-    .genCann::selection{
-        color: #242329;
-        background-color: #f6bfe2;
-    }
+
 }

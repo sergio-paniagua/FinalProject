@@ -1,5 +1,6 @@
 @charset "UTF-8";
 header {
+  min-height: 10vh;
   width: 100vw;
   background-color: white;
   height: 100%;
@@ -70,11 +71,11 @@ main .containerLab .mainServicios .textPot, main .containerLab .mainServicios .t
   letter-spacing: 2px;
   padding: 10px; }
 
-/* ANIMACIONES Y TRANSCICIONES */
-img:hover {
+.card-img-top:hover, .card-img1:hover, .imgLab:hover, footer .imgF .imgFace:hover, footer .imgF .imgLn:hover {
   transform: scale(0.9, 0.9) translate(5px, 5px);
   transition: 1ms; }
 
+/* ANIMACIONES Y TRANSCICIONES */
 input:focus {
   background-color: #d7ff9b; }
 
@@ -91,14 +92,24 @@ h2 {
   100% {
     color: #5e8028; } }
 
+h2 {
+  animation-name: efectoTit;
+  animation-duration: 3s;
+  animation-iteration-count: initial; }
+
+@keyframes efectoTit {
+  from {
+    margin-left: 60%;
+    width: 100%; }
+  to {
+    margin-left: 40%;
+    width: 100%; } }
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
   overflow-x: hidden; }
-
-header {
-  min-height: 10vh; }
 
 footer {
   background-color: #e1febd;
@@ -237,21 +248,18 @@ main .titCon {
   justify-content: space-around; }
 
 main .accordion-header {
-  background-color: darkgreen; }
+  background-color: #71d04f; }
 
 main .accordion-button:not(.collapsed) {
-  background-color: darkseagreen;
+  background-color: #e5f6d1;
   color: black; }
 
 main .dat {
   margin-top: 10px; }
 
-main .genCann {
+main .accordion-button {
+  background-color: darkseagreen;
   color: black; }
-
-main .genCann::selection {
-  color: #242329;
-  background-color: #f6bfe2; }
 
 * {
   margin: 0%;

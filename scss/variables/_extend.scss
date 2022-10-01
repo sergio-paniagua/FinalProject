@@ -1,4 +1,5 @@
 %formatoHeader{
+    min-height: 10vh;
     width: 100vw;
     background-color: white;
     height: 100%;
@@ -100,6 +101,11 @@
     word-spacing: 15px;
     letter-spacing: 2px;
     padding: 10px;
+}
+
+%animacionesImagenes{
+    transform: scale(0.9,0.9) translate(5px, 5px);
+    transition: 1ms;
 }
 
 @mixin bttn($color, $radius: 0) {

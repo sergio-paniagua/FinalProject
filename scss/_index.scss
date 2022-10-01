@@ -6,7 +6,6 @@
     }
 
    header{
-    min-height: 10vh;
     @extend %formatoHeader
    }
 
@@ -18,9 +17,10 @@
             flex-direction: row;
             justify-content: center;
             padding: 4px;
-
+           
             .aImgLn{
                 width: 3%;
+                
             }
 
             .aImgF{
@@ -29,10 +29,16 @@
             }
             .imgFace{
                 width: 100%;
+                &:hover{
+                    @extend %animacionesImagenes
+                }
             }
              
             .imgLn{
                 width: 100%;
+                &:hover{
+                    @extend %animacionesImagenes
+                }
             }
         
         }

@@ -1,7 +1,13 @@
 /* ANIMACIONES Y TRANSCICIONES */
-img:hover{
-    transform: scale(0.9,0.9) translate(5px, 5px);
-    transition: 1ms;
+.card-img-top:hover{
+    @extend %animacionesImagenes
+}
+.card-img1:hover{
+    @extend %animacionesImagenes
+}
+
+.imgLab:hover{
+    @extend %animacionesImagenes
 }
 
 input:focus{
@@ -26,3 +32,21 @@ h2{
         color: rgb(94, 128, 40);
     }
 }
+
+h2{
+    animation-name: efectoTit;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+  
+  @keyframes efectoTit {
+    from {
+      margin-left: 60%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 40%;
+      width: 100%;
+    }
+  }
