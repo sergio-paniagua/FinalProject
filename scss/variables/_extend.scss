@@ -46,7 +46,6 @@
    }
 
 }
-
 %formatoFooter{
   footer{
     background-color: $colorFooter;
@@ -76,38 +75,33 @@
         }
 }
 }
-
 %formatoRedesFooter{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 4px;
+    
 }
-
 %formatoGridServicios{
     display: flex;
     flex-direction: column;
     border: solid 2px red;
     justify-content: space-between;
 }
-
 %flexGridServicios{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 %formatoTextoServicios{
     word-spacing: 15px;
     letter-spacing: 2px;
     padding: 10px;
 }
-
 %animacionesImagenes{
     transform: scale(0.9,0.9) translate(5px, 5px);
     transition: 1ms;
 }
-
 @mixin bttn($color, $radius: 0) {
     background-color: $color;
     border: solid black;
