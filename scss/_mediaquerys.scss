@@ -2,6 +2,8 @@
     header{
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
+    
     }
     .logoNom{
         display: flex;
@@ -21,7 +23,7 @@
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 1024px){
     main{
         .containerLab{
             .mainServicios { 
@@ -29,10 +31,19 @@
                 display: flex;
                 flex-direction:column;
                 justify-content: space-between;
+
+                .imgLab{
+                    width: 20%;
+                  }
             }
+
+       
         }
+ 
     }
 }
+
+
 
 @media (max-width:780px){
     main{
@@ -67,5 +78,53 @@
                 justify-content: space-around;
             }
             
+        }
+    }
+    @media (max-width: 450px){   
+        header{
+            overflow-x:scroll;
+        }  
+        .navBar{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 360px){   
+        header{
+            overflow-x:scroll;
+        }  
+        .navBar{
+            font-size: 10px;
+        }
+    }
+/*--------------------------------------FOOTER---------------------------------------------*/
+    @media (max-width: 768px){   
+        footer{
+            .imgF{
+                .aImgLn{
+                    width: 15%;
+                    
+                }
+    
+                .aImgF{
+                    width: 15%;
+                
+                }
+            }
+        }
+    }
+    @media (max-width: 360px){   
+        footer{
+            .imgF{
+                .aImgLn{
+                    width: 10%;
+                    
+                }
+    
+                .aImgF{
+                    width: 10%;
+                
+                }
+            }
         }
     }
