@@ -310,7 +310,7 @@ main {
     flex-direction: column;
     justify-content: space-between; }
     main .containerLab .mainServicios .imgLab {
-      width: 15%; } }
+      width: 25%; } }
 
 @media (max-width: 780px) {
   main .cardCbd {
